@@ -4,82 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Para mi Carla ♡</title>
+  <title>Para mi Carla ❤️</title>
 
-  <meta name="description" content="Un pequeño universo hecho especialmente para Carla.">
-
-  <!-- Fuentes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- =====================================================
-       INTRO
-  ====================================================== -->
+  <!-- FONDO DEL UNIVERSO -->
+  <canvas id="spaceCanvas"></canvas>
 
-  <div id="intro">
+  <div class="aurora"></div>
+  <div class="grain"></div>
+  <div class="vignette"></div>
+
+
+  <!-- INTRO -->
+  <section class="intro" id="intro">
 
     <div class="intro-stars"></div>
 
     <div class="intro-content">
 
-      <p class="intro-eyebrow">
-        ✦ PARA MI NIÑA CHIQUITA ✦
-      </p>
+      <span class="intro-small">✦ PARA TI ✦</span>
 
       <h1>
-        Hay un universo<br>
-        <span>que hice para ti.</span>
+        Un pequeño<br>
+        <span>universo</span>
       </h1>
 
-      <p class="intro-text">
-        Mi querida Carla, hay cosas que simplemente no sé
-        cómo decirte... así que decidí convertirlas en estrellas.
+      <p>
+        creado para la persona<br>
+        que hizo más bonito el mío.
       </p>
 
       <button id="enterBtn" class="main-button">
-        Entrar a mi universo
-        <span>♡</span>
+        Entrar a nuestro universo
+        <span>→</span>
       </button>
-
-      <p class="intro-small">
-        La música comienza al entrar.
-      </p>
 
     </div>
 
-  </div>
+  </section>
 
 
-  <!-- =====================================================
-       FONDO
-  ====================================================== -->
-
-  <canvas id="spaceCanvas"></canvas>
-
-  <div class="aurora aurora-one"></div>
-  <div class="aurora aurora-two"></div>
-
-  <div class="grain"></div>
-  <div class="vignette"></div>
-
-
-  <!-- =====================================================
-       NAVEGACIÓN
-  ====================================================== -->
-
+  <!-- BARRA SUPERIOR -->
   <header class="topbar">
 
-    <a href="#inicio" class="brand">
-      C · M <span>♡</span>
-    </a>
+    <div class="brand">
+      <span>C</span>
+      <i>·</i>
+      <span>M</span>
+      <b>♡</b>
+    </div>
 
     <button id="musicBtn" class="music-button">
       <span class="music-icon">♫</span>
@@ -89,165 +71,134 @@
   </header>
 
 
-  <!-- =====================================================
-       CONTENIDO PRINCIPAL
-  ====================================================== -->
-
+  <!-- HERO -->
   <main>
 
+    <section class="hero section-reveal">
 
-    <!-- ===================================================
-         HERO
-    ==================================================== -->
+      <div class="hero-content">
 
-    <section id="inicio" class="scene hero">
-
-      <div class="hero-content reveal">
-
-        <p class="eyebrow">
+        <span class="eyebrow">
           ✦ UN PEQUEÑO UNIVERSO PARA TI ✦
-        </p>
+        </span>
 
-        <h2 class="hero-title">
-          PARA MI CARLA
+        <h2>
+          PARA MI <span>CARLA</span>
         </h2>
 
-        <h3 class="hero-subtitle">
+        <h3>
           PARA MI NIÑA
-          <span>muy especial</span>
         </h3>
 
-        <p class="hero-description">
-          Mi negrita hermosa, hice este pequeño universo para ti
-          porque quería darte algo que fuera diferente.
-          Algo que pudiera guardar un poquito de todo lo que siento
-          cuando pienso en ti.
+        <div class="hero-line"></div>
+
+        <p>
+          Mi negrita hermosa, mi vida, mi amor,
+          mi niña chiquita...
         </p>
 
-        <button class="scroll-button" data-scroll="#sol-luna">
-          <span>Descubrir</span>
-          <span class="arrow">↓</span>
+        <p class="hero-description">
+          Si pudiera guardar todo lo bonito que siento
+          por ti en un lugar, sería este pequeño universo.
+        </p>
+
+        <button class="scroll-button" data-target="momento">
+          Descubrir nuestro universo
+          <span>↓</span>
         </button>
 
       </div>
 
+    </section>
 
-      <!-- Sistema orbital -->
+
+    <!-- SISTEMA ORBITAL -->
+    <section class="orbital-section section-reveal" id="momento">
+
+      <div class="section-heading">
+
+        <span>01 — NUESTRO UNIVERSO</span>
+
+        <h2>
+          Dos corazones.<br>
+          <em>Un mismo universo.</em>
+        </h2>
+
+      </div>
 
       <div class="orbital-system">
 
         <div class="orbit orbit-one"></div>
         <div class="orbit orbit-two"></div>
+        <div class="orbit orbit-three"></div>
 
-        <div class="planet planet-one"></div>
-        <div class="planet planet-two"></div>
+        <div class="sun-core">
+          <span>☀</span>
+        </div>
 
-        <div class="mini-star star-one">✦</div>
-        <div class="mini-star star-two">✧</div>
-        <div class="mini-star star-three">✦</div>
+        <div class="planet planet-one">
+          <span>♡</span>
+        </div>
 
-        <div class="heart-orbit">
-          ♡
+        <div class="planet planet-two">
+          <span>✦</span>
+        </div>
+
+        <div class="planet planet-three">
+          <span>∞</span>
         </div>
 
       </div>
+
+      <p class="orbital-text">
+        Hay millones de estrellas en el universo,
+        pero entre todas ellas, mi lugar favorito
+        siempre será contigo.
+      </p>
 
     </section>
 
 
-    <!-- ===================================================
-         SOL Y LUNA
-    ==================================================== -->
+    <!-- SOL Y LUNA -->
+    <section class="sun-moon-section section-reveal">
 
-    <section id="sol-luna" class="scene sol-luna">
+      <div class="sun-card">
 
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          01 · DOS LUCES
-        </p>
-
-        <h2>
-          Sol y Luna
-        </h2>
-
-        <p>
-          Dos luces distintas, pero ambas capaces de iluminar
-          el mismo universo.
-        </p>
-
-      </div>
-
-
-      <div class="sun-moon-stage">
-
-
-        <!-- SOL -->
-
-        <div class="giant-sun">
-
-          <div class="sun-glow"></div>
-
-          <div class="sun-core"></div>
-
-          <div class="sun-rays"></div>
-
-          <span class="celestial-word">
-            SOL
-          </span>
-
+        <div class="celestial sun">
+          ☀
         </div>
 
-
-        <!-- CORAZÓN -->
-
-        <div class="center-heart">
-          ♡
-        </div>
-
-
-        <!-- LUNA -->
-
-        <div class="giant-moon">
-
-          <div class="moon-glow"></div>
-
-          <div class="moon-core">
-
-            <span class="moon-crater crater-one"></span>
-            <span class="moon-crater crater-two"></span>
-            <span class="moon-crater crater-three"></span>
-            <span class="moon-crater crater-four"></span>
-
-          </div>
-
-          <span class="celestial-word">
-            LUNA
-          </span>
-
-        </div>
-
-      </div>
-
-
-      <div class="sol-luna-message reveal">
+        <span>EL SOL</span>
 
         <h3>
-          Mi amor, tú iluminas mis días.
+          Tú iluminas mis días.
         </h3>
 
         <p>
-          Mi niña chiquita, tú eres mi luz.
-          No importa qué tan oscuro esté el cielo,
-          siempre hay algo en ti que consigue hacerlo
-          un poquito más bonito.
+          Incluso cuando todo parece oscuro,
+          siempre encuentras una manera de hacer
+          que vuelva a brillar.
         </p>
 
-        <p class="small-message">
-          ¿Qué serían el Sol sin la Luna?
-          <br>
-          Quizás eso somos nosotros:
-          dos personas que encontraron su propio universo.
+      </div>
+
+
+      <div class="moon-card">
+
+        <div class="celestial moon">
+          ☾
+        </div>
+
+        <span>LA LUNA</span>
+
+        <h3>
+          Tú haces bonitas mis noches.
+        </h3>
+
+        <p>
+          Porque hasta en los momentos tranquilos,
+          pensar en ti hace que todo se sienta
+          un poquito más especial.
         </p>
 
       </div>
@@ -255,116 +206,85 @@
     </section>
 
 
-    <!-- ===================================================
-         MENSAJES
-    ==================================================== -->
+    <!-- MENSAJES -->
+    <section class="messages-section section-reveal">
 
-    <section id="mensajes" class="scene messages">
+      <div class="section-heading centered">
 
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          02 · PALABRAS DESDE EL CORAZÓN
-        </p>
+        <span>02 — PEQUEÑAS VERDADES</span>
 
         <h2>
-          Para mi amor
+          Cosas que nunca<br>
+          quiero que olvides.
         </h2>
 
       </div>
 
 
-      <div class="floating-words">
+      <div class="messages-grid">
 
-        <span class="floating-word word-one">
-          Mi negrita hermosa ♡
-        </span>
-
-        <span class="floating-word word-two">
-          Mi vida.
-        </span>
-
-        <span class="floating-word word-three">
-          Mi amor.
-        </span>
-
-        <span class="floating-word word-four">
-          Mi niña chiquita.
-        </span>
-
-        <span class="floating-word word-five">
-          Te quiero muchísimo.
-        </span>
-
-        <span class="floating-word word-six">
-          Mi persona favorita.
-        </span>
-
-        <span class="floating-word word-seven">
-          Mi estrella.
-        </span>
-
-        <span class="floating-word word-eight">
-          ♡
-        </span>
-
-      </div>
-
-
-      <div class="heart-message reveal">
-
-        <div class="heart-particle">
-          ♡
-        </div>
-
-        <div class="message-card">
-
+        <article class="message-card">
+          <span>01</span>
+          <h3>Eres increíble.</h3>
           <p>
-            Carla...
+            Nunca dudes de lo especial que eres.
           </p>
+        </article>
 
-          <h3>
-            De todas las cosas bonitas
-            que pudo crear el universo,
-            mi favorita fue hacer que
-            nuestros caminos se cruzaran.
-          </h3>
-
+        <article class="message-card">
+          <span>02</span>
+          <h3>Gracias por todo.</h3>
           <p>
-            Gracias por cada momento, por cada risa,
-            por cada conversación y por cada recuerdo
-            que hemos ido construyendo.
+            Por cada momento, cada sonrisa
+            y cada recuerdo.
           </p>
+        </article>
 
+        <article class="message-card">
+          <span>03</span>
+          <h3>Contigo, todo es mejor.</h3>
           <p>
-            No necesito que todo sea perfecto.
-            Solo quiero seguir creando momentos bonitos
-            contigo.
+            Hasta los días normales terminan
+            convirtiéndose en recuerdos bonitos.
           </p>
-
-        </div>
+        </article>
 
       </div>
 
     </section>
 
 
-    <!-- ===================================================
-         NUESTRA HISTORIA
-    ==================================================== -->
+    <!-- FRASE CENTRAL -->
+    <section class="quote-section section-reveal">
 
-    <section id="historia" class="scene story">
+      <div class="quote-stars">
+        ✦
+      </div>
 
-      <div class="section-heading reveal">
+      <span>PALABRAS DESDE EL CORAZÓN</span>
 
-        <p class="eyebrow">
-          03 · NUESTRA HISTORIA
-        </p>
+      <blockquote>
+        "De todos los lugares del universo,
+        mi favorito siempre será donde estés tú."
+      </blockquote>
+
+      <div class="quote-heart">
+        ♡
+      </div>
+
+    </section>
+
+
+    <!-- HISTORIA -->
+    <section class="history-section section-reveal" id="historia">
+
+      <div class="section-heading">
+
+        <span>03 — NUESTRA HISTORIA</span>
 
         <h2>
-          Dos caminos.
-          <br>
-          Un mismo universo.
+          Dos caminos,<br>
+          <em>un mismo universo.</em>
         </h2>
 
       </div>
@@ -372,334 +292,256 @@
 
       <div class="timeline">
 
+        <div class="timeline-item">
 
-        <article class="timeline-item reveal">
-
-          <div class="timeline-number">
-            01
-          </div>
+          <div class="timeline-dot"></div>
 
           <div class="timeline-content">
 
-            <span>
-              EL COMIENZO
-            </span>
+            <span>EL COMIENZO</span>
 
             <h3>
-              Dos caminos.
+              El momento en que todo empezó.
             </h3>
 
             <p>
-              Antes de conocerte, cada uno tenía su propio camino.
-              Y entonces, de alguna manera, nuestros caminos
-              terminaron encontrándose.
+              Quizás en ese momento no sabíamos
+              todo lo que vendría después,
+              pero ahí comenzó algo que hoy
+              significa muchísimo para mí.
             </p>
 
           </div>
 
-        </article>
+        </div>
 
 
-        <article class="timeline-item reveal">
+        <div class="timeline-item">
 
-          <div class="timeline-number">
-            02
-          </div>
+          <div class="timeline-dot"></div>
 
           <div class="timeline-content">
 
-            <span>
-              DESPUÉS
-            </span>
+            <span>CADA MOMENTO</span>
 
             <h3>
-              Un mismo universo.
+              Los recuerdos que fuimos creando.
             </h3>
 
             <p>
-              Poco a poco llegaron las conversaciones,
-              las risas, los momentos inesperados
-              y todos esos pequeños recuerdos
-              que terminan significando muchísimo.
+              Cada conversación, cada risa,
+              cada pequeño detalle fue formando
+              nuestra propia historia.
             </p>
 
           </div>
 
-        </article>
+        </div>
 
 
-        <article class="timeline-item reveal">
+        <div class="timeline-item">
 
-          <div class="timeline-number">
-            03
-          </div>
+          <div class="timeline-dot"></div>
 
           <div class="timeline-content">
 
-            <span>
-              HOY
-            </span>
+            <span>HOY</span>
 
             <h3>
-              Y aquí estamos.
+              Y aquí seguimos.
             </h3>
 
             <p>
-              Es increíble pensar en todo lo que tuvo que pasar
-              para que hoy pueda llamarte mi vida,
-              mi amor y mi niña chiquita.
+              Sumando momentos y construyendo
+              recuerdos que quiero guardar
+              para siempre.
             </p>
 
           </div>
 
-        </article>
-
+        </div>
 
       </div>
 
     </section>
 
 
-    <!-- ===================================================
-         FOTO
-    ==================================================== -->
+    <!-- FOTO -->
+    <section class="photo-section section-reveal">
 
-    <section id="momento" class="scene memory">
+      <div class="section-heading centered">
 
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          04 · NUESTRO MOMENTO
-        </p>
+        <span>04 — NUESTRO MOMENTO</span>
 
         <h2>
-          Un recuerdo
-          <br>
-          que quiero guardar.
+          Un recuerdo<br>
+          <em>que quiero guardar.</em>
         </h2>
 
       </div>
 
 
-      <div class="memory-frame reveal">
+      <div class="photo-frame">
 
-        <div class="memory-glow"></div>
+        <div class="photo-glow"></div>
 
-        <div class="photo-container">
+        <img
+          id="memoryImage"
+          src="foto.jpeg"
+          alt="Nuestro momento"
+        >
 
-          <img
-            id="memoryImage"
-            src="foto.jpg"
-            alt="Nuestro momento"
-          >
+        <div class="photo-overlay">
 
-          <div class="photo-overlay">
+          <span>MI LUGAR FAVORITO</span>
 
-            <span>
-              CARLA ♡
-            </span>
-
-            <p>
-              Un momento que quiero recordar siempre.
-            </p>
-
-          </div>
+          <p>
+            contigo ♡
+          </p>
 
         </div>
 
       </div>
-
-
-      <p class="memory-caption reveal">
-        Porque algunos momentos pasan una sola vez,
-        pero se quedan para siempre.
-      </p>
 
     </section>
 
 
-    <!-- ===================================================
-         CARTA
-    ==================================================== -->
+    <!-- CARTA -->
+    <section class="letter-section section-reveal">
 
-    <section id="carta" class="scene letter-section">
+      <div class="letter-card">
 
-      <div class="letter-stars"></div>
+        <div class="letter-decoration top">
+          ✦
+        </div>
 
-      <div class="section-heading reveal">
-
-        <p class="eyebrow">
-          05 · PARA TI
-        </p>
+        <span class="letter-label">
+          PARA TI, CARLA
+        </span>
 
         <h2>
-          Una carta
-          <br>
-          desde mi corazón.
+          Mi negrita hermosa,
         </h2>
 
-      </div>
-
-
-      <article class="letter-card reveal">
-
-        <div class="letter-top">
-          <span>♡</span>
-        </div>
-
-
-        <div class="letter-content">
-
-          <p class="letter-greeting">
-            Mi querida Carla,
-          </p>
-
+        <div class="letter-text">
 
           <p>
-            En el vasto silencio del universo, donde las estrellas
-            parecen bailar entre ellas, tú eres esa persona que
-            consigue iluminar mis días de una manera que no sé
-            explicar del todo.
+            Mi vida, mi amor, mi niña chiquita...
           </p>
-
 
           <p>
-            Eres tan hermosa que hasta el sol parece quedarse
-            pequeño cuando sonríes, y tan especial que mi corazón
-            guarda un lugar que solamente lleva tu nombre.
+            Quiero que sepas que eres una de
+            las personas más especiales que han
+            llegado a mi vida.
           </p>
-
 
           <p>
-            Eres de esas personas que hacen que un día normal
-            se vuelva un recuerdo bonito.
-            La persona que consigue sacarme una sonrisa
-            incluso cuando no estaba pensando en sonreír.
+            Gracias por existir, por compartir
+            conmigo tantos momentos y por hacer
+            que incluso los días más simples
+            tengan algo especial.
           </p>
-
 
           <p>
-            Eres mi vida, mi amor, mi negrita hermosa,
-            mi niña chiquita.
-            Y aunque a veces no encuentre las palabras exactas,
-            quiero que sepas que te quiero muchísimo.
+            No sé qué nos depare el futuro,
+            pero sí sé que cada recuerdo
+            contigo tiene un lugar especial
+            dentro de mi corazón.
           </p>
-
 
           <p>
-            Hay algo que quisiera que pudieras ver:
-            la manera en la que yo te veo.
-            Porque quizás tú no siempre puedas darte cuenta
-            de lo especial que eres, pero yo sí encuentro
-            muchísimas razones para admirarte.
+            Espero que cuando vuelvas a entrar
+            aquí recuerdes algo muy sencillo:
+            eres importante, eres especial
+            y hay alguien que agradece muchísimo
+            haberte encontrado.
           </p>
-
 
           <p>
-            Gracias por existir.
-            Gracias por cada momento que hemos compartido.
-            Gracias por todas esas pequeñas cosas que quizás
-            para ti no significan demasiado, pero que para mí
-            terminan convirtiéndose en recuerdos que quiero guardar.
-          </p>
-
-
-          <p>
-            Te quiero con cada latido, con cada estrella que
-            aparece en el cielo y con todo el cariño que
-            mi corazón puede guardar.
-          </p>
-
-
-          <p class="letter-ending">
-            Siempre vas a tener un lugar especial
-            en este pequeño universo. ♡
+            Gracias por ser tú.
           </p>
 
         </div>
-
 
         <div class="letter-signature">
 
           <span>
-            Para mi niña chiquita
+            Con todo mi cariño
           </span>
 
           <strong>
-            C ♡
+            ♡
           </strong>
 
         </div>
 
-      </article>
+        <div class="letter-decoration bottom">
+          ✦
+        </div>
+
+      </div>
 
     </section>
 
 
-    <!-- ===================================================
-         FINAL
-    ==================================================== -->
+    <!-- PALABRAS FLOTANTES -->
+    <section class="floating-love-section">
 
-    <section id="finale" class="scene finale">
+      <span class="floating-word word-one">
+        amor
+      </span>
+
+      <span class="floating-word word-two">
+        cariño
+      </span>
+
+      <span class="floating-word word-three">
+        siempre
+      </span>
+
+      <span class="floating-word word-four">
+        nosotros
+      </span>
+
+      <span class="floating-word word-five">
+        tú
+      </span>
+
+      <span class="floating-word word-six">
+        ♡
+      </span>
+
+    </section>
 
 
-      <div class="final-stars"></div>
-
+    <!-- FINAL -->
+    <section class="final-section section-reveal">
 
       <div class="eclipse">
 
-        <div class="eclipse-sun"></div>
-
-        <div class="eclipse-moon"></div>
-
         <div class="eclipse-ring"></div>
+
+        <div class="eclipse-center">
+          ♡
+        </div>
 
       </div>
 
+      <span>
+        Y SI EL UNIVERSO FUERA INFINITO...
+      </span>
 
-      <div class="final-content reveal">
+      <h2>
+        Siempre encontraría<br>
+        el camino hacia ti.
+      </h2>
 
-        <p class="eyebrow">
-          ✦ Y SI ALGÚN DÍA TE PREGUNTAS... ✦
-        </p>
+      <p>
+        Gracias por existir en mi universo.
+      </p>
 
-        <h2>
-          ¿Por qué tú?
-        </h2>
-
-        <p class="final-message">
-
-          Porque entre tantos millones de personas,
-          entre tantos caminos y tantas historias,
-          tuve la suerte de encontrarte a ti.
-
-        </p>
-
-        <p class="final-message">
-
-          Y si pudiera volver a empezar este universo
-          desde el principio...
-
-        </p>
-
-        <h3>
-          volvería a elegirte a ti.
-        </h3>
-
-
-        <p class="final-signature">
-          Con todo mi corazón ♡
-        </p>
-
-
-        <button
-          id="restartBtn"
-          class="main-button secondary-button"
-        >
-          Volver al principio
-          <span>↻</span>
-        </button>
-
+      <div class="final-signature">
+        C ♡ M
       </div>
 
     </section>
@@ -707,25 +549,34 @@
   </main>
 
 
-  <!-- =====================================================
-       MÚSICA
-  ====================================================== -->
+  <!-- FOOTER -->
+  <footer>
 
-  <audio
-    id="bgMusic"
-    loop
-    preload="auto"
-  >
-    <source
-      src="Frances Limon.mp3"
-      type="audio/mpeg"
-    >
+    <div class="footer-symbol">
+      ✦
+    </div>
+
+    <p>
+      Que te ama con toda su <strong>ALMA</strong>.
+    </p>
+
+    <span>
+      Hecho con cariño para Carla ♡
+    </span>
+
+  </footer>
+
+
+  <!-- AUDIO -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="Frances Limon.mp3" type="audio/mpeg">
   </audio>
 
 
-  <!-- =====================================================
-       JAVASCRIPT
-  ====================================================== -->
+  <button id="restartBtn" class="restart-button">
+    ↑
+  </button>
+
 
   <script src="script.js"></script>
 
